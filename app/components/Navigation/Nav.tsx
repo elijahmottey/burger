@@ -5,7 +5,12 @@ import { BiCycling, BiShoppingBag } from 'react-icons/bi'
 import { HiBars3BottomRight } from 'react-icons/hi2'
 import {links} from './utl'
 
-const Nav = () => {
+
+interface Props {
+  openNav: ()=>void
+}
+
+const Nav = ({openNav}:Props) => {
     // links contain the names and links associated to listed names
    
 
@@ -30,7 +35,7 @@ const Nav = () => {
              </ul>
              {/* buttons */}
              <div className='flex items-center space-x-4'>
-                <button className='px-6 py-2 sm:px-8 py-3 text-[14px] bg-blue-950 transition-all duration-200 rounded hover:bg-red-600
+                <button className='px-6 sm:px-8 py-3 text-[14px] bg-blue-950 transition-all duration-200 rounded hover:bg-red-600
                 flex items-center space-x-2 text-white'>
                     <span> <BiCycling className='w-[1.3rem] sm:w-[1.7rem] sm:h-[1.7rem]'/></span>
 
@@ -39,7 +44,7 @@ const Nav = () => {
                 <button className='flex justify-center items-center sm:px-6 sm:py-2 py-2 px-4 hover:bg-green-700 transition-all duration-200
                 bg-orange-600 rounded-md text-white'> 
                   <BiShoppingBag className='w-[1.3rem] sm:w-[1.7rem] sm:h-[1.7rem]'/> </button>
-                  <HiBars3BottomRight className='lg:hidden w-[2rem] h-[2rem] text-black'/>
+                  <HiBars3BottomRight onClick={openNav} className='lg:hidden w-[2rem] h-[2rem] text-black'/>
              </div>
       </div>
     </div>
