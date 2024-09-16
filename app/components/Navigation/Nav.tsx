@@ -21,7 +21,7 @@ const Nav = ({openNav}:Props) => {
              {/* logo */}
              <div className='flex  items-center space-x-2'>
                 <FaBurger className='text-orange-500 w-[1.2rem] h-[1.2rem] sm:w-[1.4rem] sm:h-[1.4rem] '/>
-                <h1 className='font-semibold text-[20px] sm:text-[30px]'>BurgerBite</h1>
+                <h1 className='font-semibold text-[20px] sm:text-[30px]'>MeatPieBite</h1>
 
              </div>
              <ul className='hidden lg:flex items-center space-x-10'>

@@ -6,12 +6,12 @@ import Link from 'next/link'
 
 interface Props{
   showNav : boolean;
-  closeNav: ()=>void
+  closeNav: ()=>void;
 }
 
 const Mobile = ({closeNav,showNav}:Props) => {
 
-  const navStyle = showNav ? 'translate-y-0': 'translate-y-[-100%]'
+  const navStyle = showNav ? 'translate-x-0': 'translate-x-[-100%]'
 
   return (
     <div className={`fixed ${navStyle} right-0  transition-all duration-500 top-0 bottom-0 left-0
