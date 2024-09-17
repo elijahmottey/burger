@@ -22,7 +22,7 @@ const Mobile = ({closeNav,showNav}:Props) => {
 
 {links.map((item)=>{
                     return(
-                        <li key={item.href} className='font-medium text-[20px]  hover:text-yellow-400 text-white list-none'>
+                        <li key={item.href} className='font-medium text-[20px] mb-10  hover:text-yellow-400 text-white list-none'>
                             <Link href={item.href}>{item.name}</Link>
                         </li>
                     )

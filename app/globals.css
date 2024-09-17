@@ -3,4 +3,8 @@
 @tailwind utilities;
 
 
+.clip_path{
+    clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
 
