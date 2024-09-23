@@ -1,6 +1,7 @@
 import React from 'react'
 import { Metadata } from 'next'
 import  Slider from './slider/Slider'
+import  Feature from './Feature/feature'
 
 export const metadata: Metadata = {
     title:"Home"
@@ -9,8 +10,10 @@ export const metadata: Metadata = {
 const Home = () => {
    
   return (
-    <div>
+    <div className="overflow-hidden">
       <Slider/>
+      <Feature/>
+      
     </div>
   )
 }

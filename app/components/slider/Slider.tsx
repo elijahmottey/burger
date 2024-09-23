@@ -42,10 +42,10 @@ const Slider = () => {
         showDots={true}
       >
         {/* Slide */}
-        <div className="w-[100%] h-[90vh] flex items-center justify-center flex-col bg-blue-950 clip_path">
+        <div className="w-[100%] h-[90vh] flex items-center justify-center flex-col bg-blue-950 md:clip_path">
           {/* Slide content */}
           <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
-            <Image src={Piebg} alt="pie" />
+            <Image src={Piebg} alt="pie" className="hidden md:block" />
             <div>
               <h1 className="text-[40px] font-semibold text-yellow-400">Fast Foods Meat Pie</h1>
               <h1 className="text-[90px] leading-[5rem] uppercase text-white font-bold">Best <br /> Meat Pie</h1>
@@ -64,10 +64,10 @@ const Slider = () => {
           
         </div>
 
-        <div className="w-[100%] h-[90vh] flex items-center justify-center flex-col bg-red-500 clip_path">
+        <div className="w-[100%] h-[90vh] flex items-center justify-center flex-col bg-red-500 md:clip_path">
           {/* Slide content */}
           <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
-            <Image src={RoundPiebg} alt="pie" />
+            <Image src={RoundPiebg} alt="pie"  className="hidden md:block" />
             <div>
               <h1 className="text-[40px] font-semibold text-yellow-400">Fast Foods Spring roll</h1>
               <h1 className="text-[90px] leading-[5rem] uppercase text-white font-bold">Best <br /> Spring roll</h1>
@@ -86,10 +86,10 @@ const Slider = () => {
           
         </div>
 
-        <div className="w-[100%] h-[90vh] flex items-center justify-center flex-col bg-black clip_path">
+        <div className="w-[100%] h-[90vh] flex items-center justify-center flex-col bg-black md:clip_path">
           {/* Slide content */}
           <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
-            <Image src={Doughnutbg} alt="pie" />
+            <Image src={Doughnutbg} alt="pie" className="hidden md:block" />
             <div>
               <h1 className="text-[40px] font-semibold text-yellow-400">Fast Foods Spring roll</h1>
               <h1 className="text-[90px] leading-[5rem] uppercase text-white font-bold">Best <br /> Spring roll</h1>
