@@ -8,24 +8,10 @@ import RoundPiebg from "@/public/images/roundpie.jpg";
 import Doughnutbg from "@/public/images/doughnuts.jpg";
 import Image from "next/image";
 import { BiCycling } from 'react-icons/bi';
+import { responsive } from './SliderUtil';
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-};
+
+
 
 const Slider = () => {
   return (
