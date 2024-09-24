@@ -34,6 +34,7 @@ const PopularPastries = () => {
                 Products.map(products=>{
                     return(
                         <PastryCard
+                        key={products.title}
                         image={products.image}
                         review={products.reviews}
                         price={products.price}
@@ -43,7 +44,7 @@ const PopularPastries = () => {
                         />
                     )
                 })
-               }
+               
               </div>
             
 
