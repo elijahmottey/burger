@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BiShoppingBag } from "react-icons/bi";
 import { FaStar } from "react-icons/fa";
 
 
@@ -33,7 +34,10 @@ const PastryCard = ({title,price,review,image}:Props) => {
              </div>
              <p className="mt-[0.5rem] text-black opacity-70">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis commodi dolorum magni dolores sequi sint alias. Ducimus, sunt in veniam cum eum vel at nisi quos. Corporis, provident porro?</p>
              <div className="flex mt-[1.4rem] items-center justify-between">
-                <h1>{price}</h1>
+                <h1 className="text-[25px] font-bold text-red-600">{price}</h1>
+                <button className="px-4 py-2 hover:bg-green-700 transition-all duration-200 bg-orange-600
+                flex items-center rounded-md text-white"><BiShoppingBag className="w-[1.3rem] h-[1.3rem]" /></button>
+
 
              </div>
         

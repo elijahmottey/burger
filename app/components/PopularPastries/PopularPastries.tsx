@@ -29,7 +29,7 @@ const PopularPastries = () => {
             showDots={false}
 
             >
-              <div>
+              
               {
                 Products.map(products=>{
                     return(
@@ -45,7 +45,7 @@ const PopularPastries = () => {
                     )
                 })}
                
-              </div>
+              
             
 
             </Carousel>

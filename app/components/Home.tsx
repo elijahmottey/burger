@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import  Slider from './slider/Slider'
 import  Feature from './Feature/feature'
 import PopularPastries from './PopularPastries/PopularPastries'
+import { Delivery } from './Delivery/Delivery'
 
 export const metadata: Metadata = {
     title:"Home"
@@ -15,6 +16,7 @@ const Home = () => {
       <Slider/>
       <Feature/>
       <PopularPastries/>
+      <Delivery/>
       
     </div>
   )
