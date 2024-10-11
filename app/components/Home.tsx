@@ -4,6 +4,7 @@ import  Slider from './slider/Slider'
 import  Feature from './Feature/feature'
 import PopularPastries from './PopularPastries/PopularPastries'
 import { Delivery } from './Delivery/Delivery'
+import { Team } from './Team/Team'
 
 export const metadata: Metadata = {
     title:"Home"
@@ -17,6 +18,7 @@ const Home = () => {
       <Feature/>
       <PopularPastries/>
       <Delivery/>
+      <Team/>
       
     </div>
   )
