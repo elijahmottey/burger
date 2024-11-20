@@ -5,6 +5,7 @@ import  Feature from './Feature/feature'
 import PopularPastries from './PopularPastries/PopularPastries'
 import { Delivery } from './Delivery/Delivery'
 import { Team } from './Team/Team'
+import { Reservation } from './Reservation/Reservation'
 
 export const metadata: Metadata = {
     title:"Home"
@@ -19,6 +20,7 @@ const Home = () => {
       <PopularPastries/>
       <Delivery/>
       <Team/>
+      <Reservation/>
       
     </div>
   )
