@@ -13,7 +13,7 @@ export const Team = () =>{
                 {
                     TeamData.map(data=>{
                         return(
-                            <TeamCard
+                            <TeamCard key={data.name}
                             name={data.name}
                             image={data.image}
                             position={data.position}
